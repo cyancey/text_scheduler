@@ -1,0 +1,6 @@
+<%= form_for @text_message do |f| %>
+  <%= f.text_field :phone_num, placeholder: "Phone Num - 10 digits" %>
+  <%= f.text_field :content, placeholder: "Message" %>
+  <%= f.datetime_select :send_datetime %>
+  <%= f.submit %>
+<% end %>
